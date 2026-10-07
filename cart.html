@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Себет — STYLE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">STYLE<span>.</span></a>
+  <nav class="nav">
+    <a href="index.html">Басты бет</a>
+    <a href="index.html#products">Каталог</a>
+    <a href="index.html#about">Біз туралы</a>
+  </nav>
+  <a href="cart.html" class="cart">🛒 Себет <b id="cartCount">0</b></a>
+</header>
+
+<main class="cart-page">
+  <h1 class="page-title">Себет</h1>
+  <div id="cartItems"></div>
+  <div id="cartFooter" hidden>
+    <div class="cart-total"><span>Барлығы</span><span id="cartTotal"></span></div>
+    <form class="order-form" id="orderForm">
+      <input name="name" placeholder="Аты-жөніңіз" required minlength="2" autocomplete="name">
+      <input name="phone" type="tel" placeholder="Телефон: +7 700 000 00 00" required autocomplete="tel">
+      <textarea name="address" placeholder="Жеткізу мекенжайы" rows="3" required></textarea>
+      <button type="submit">Тапсырыс беру</button>
+    </form>
+    <div id="orderNotice" class="notice" hidden></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="logo">STYLE<span>.</span></div>
+  <p>© 2026 STYLE. Барлық құқықтар қорғалған.</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

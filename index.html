@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STYLE — Киім дүкені</title>
+  <meta name="description" content="STYLE — заманауи киім дүкені. Қазақстан бойынша жеткізу.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">STYLE<span>.</span></a>
+  <nav class="nav">
+    <a href="index.html">Басты бет</a>
+    <a href="#products">Каталог</a>
+    <a href="#about">Біз туралы</a>
+  </nav>
+  <a href="cart.html" class="cart">🛒 Себет <b id="cartCount">0</b></a>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="hero-kicker">NEW COLLECTION 2026</p>
+    <h1>Өз стиліңді<br>тап.</h1>
+    <a href="#products" class="hero-btn">Коллекцияны көру</a>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <h2>Жаңа коллекция</h2>
+  <div class="filters" id="filters">
+    <input type="search" id="search" placeholder="Тауар іздеу..." aria-label="Тауар іздеу">
+  </div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section class="about" id="about">
+  <h2>STYLE туралы</h2>
+  <p>Заманауи және сапалы киімдер. Қазақстан бойынша жеткізу.</p>
+</section>
+
+<footer class="footer">
+  <div class="logo">STYLE<span>.</span></div>
+  <p>© 2026 STYLE. Барлық құқықтар қорғалған.</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
